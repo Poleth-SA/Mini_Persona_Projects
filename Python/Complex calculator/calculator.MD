@@ -1,14 +1,17 @@
-#Calculator in Python
+# Calculator in Python
 
 ## Import Required Module
-`code` ```python
-import math
 
-We import the math module to use mathematical functions like sqrt().
+```python
+import math
+```
+
+**We import the math module to use mathematical functions like `sqrt()`.**
 
 ## Basic Arithmetic Functions
 
-`code`def add(x, y):
+```python
+def add(x, y):
     return x + y
 
 def subtract(x, y):
@@ -21,22 +24,28 @@ def divide(x, y):
     if y == 0:
         return "Error: Division by zero"
     return x / y
+```
 
-These functions perform basic arithmetic operations. The divide function includes a check for division by zero.
+**These functions perform basic arithmetic operations. The `divide` function includes a check for division by zero.**
 
 ## Advanced Mathematical Functions
 
-'code' def power(x, y):
+```python
+def power(x, y):
     return x ** y
 
 def square_root(x):
     if x < 0:
         return "Error: Cannot calculate square root of a negative number"
     return math.sqrt(x)
-These functions handle more complex operations. The square root function checks for negative input.
+```
+
+**These functions handle more complex operations. The `square_root` function checks for negative input.**
 
 ## Main Calculator Function
-'code' def calculator():
+
+```python
+def calculator():
     while True:
         print("\nSelect operation:")
         print("1. Add")
@@ -74,10 +83,15 @@ These functions handle more complex operations. The square root function checks 
         
         else:
             print("Invalid input. Please try again.")
+```
 
-This function creates a loop that continuously prompts the user for input until they choose to exit. It handles user input and calls the appropriate function based on the user's choice.
+**This function creates a loop that continuously prompts the user for input until they choose to exit. It handles user input and calls the appropriate function based on the user's choice.**
 
 ## Main Execution
-'code' if __name__ == "__main__":
+
+```python
+if __name__ == "__main__":
     calculator()
-This ensures that the calculator() function is only run if the script is executed directly (not imported as a module).
+```
+
+**This ensures that the `calculator()` function is only run if the script is executed directly (not imported as a module).**
